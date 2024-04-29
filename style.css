@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #00669F;
+}
+
+header #descuentos {
+    padding-inline: 2rem;
+    padding-block: 0.2rem;
+    background-color: #D1891C;
+    color: #333;
+    font-size: 1.33rem;
+}
+
+header nav {
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+main {
+    padding: 3rem;
+}
+
+footer {
+    margin-top: auto;
+    position: relative;
+    background-color: #00669F;
+    color: white;
+    padding-block: 2rem;
+    text-align: center;
+}
+
+footer .github {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+footer .github a {
+
+    padding-inline: 1rem;
+    padding-block: 1rem;
+}
+
+footer .github svg {
+    height: 2rem;
+}
+
+a.btn {
+    display: inline-block;
+    background-color: #00669F;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border-radius: 7px;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f3f3f3;
+    width: 400px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    overflow: hidden;
+}
+
+.card-header {
+    height: 200px;
+    background-size: cover;
+}
+
+.card-body {
+    position: relative;
+    padding: 75px 1rem 1rem;
+    text-align: center;
+}
+
+.card .avatar {
+    position: absolute;
+    top: -75px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-weight: 400;
+    margin-block: 1rem;
+}
+
+.card p {
+    text-align: left;
+    margin-block: 1rem;
+}
